@@ -1,0 +1,121 @@
+/* RESET: Limpia márgenes y rellenos por defecto que ponen los navegadores */
+* {
+    margin: 0; /*Elimina marhenes externos por defecto*/
+    padding: 0;/* Elimina el relleno automatuco de algunos elementos */
+    box-sizing: border-box; /*Hace el diseño mas facil de controlar al excluir en tamaño el border y padding*/
+}
+
+body { /*Estilos generales de la pagina */ 
+    font-family: Arial, sans-serif; /* Define la tipografia del sitio*/
+    background-color: #fff; /* Color de fondo*/
+}
+
+/* HEADER: Controla la barra superior */
+.main-header {
+    background-color: #333; /* Color de fondo de la barra*/
+    color: white; /* Color del texto dentro del header  */
+    display: flex; /* Activa Flexbox para poner logo y menú en línea o*/
+    justify-content: space-between; /* Distribuye los elementos horizontalmente. */
+    align-items: center; /* Centra  verticalmente */
+    padding: 15px 50px; /* Espacio interno del header */
+}
+
+/* Menu Navegación: Controla la lista del menu */
+.main-header ul {
+    display: flex; /* Convierte la lista vertical: */
+    list-style: none; /* Quita los puntos de la lista */
+    gap: 20px; /* Crea un espacio entre los elementos */
+}
+/*LINKS DEL HEADER*/
+.main-header a {
+    color: white; /*Color del texto de los enlaces.*/
+    text-decoration: none; /* Elimina el subrayado azul por defecto */
+}
+
+/*CONTENEDOR DE TARJETAS/articulos*/
+.articles-container {
+    display: flex; /* Pone las tarjetas una al lado de la otra , en fila*/
+    justify-content: center; /* Centra las tarjetas en la página. */
+    gap: 30px; /* Espacio de separación entre tarjetas*/
+    padding: 40px; /*Espacio alrededor del contenedor.*/
+}
+
+.card { /*Tarjetas: Define el diseño de cada tarjeta.*/
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 15px; /*Espacio interno entre contenido y borde.*/
+    width: 320px; /* Define un ancho fijo de las  tarjetas */
+}
+
+.box-placeholder { /*Simula una imagen*/
+    background-color: #ddd; /* El color gris */
+    height: 180px; /* Altura simulada para la imagen */
+    display: flex;
+    justify-content: center;  /*centra el texto dentro de la tarjeta*/
+    align-items: center;
+    font-size: 2rem; /*tamaño letra*/
+    color: #888;
+    margin-bottom: 15px; /*  Espacio entre la imagen y ítulo */
+}
+
+/* FORMULARIO Y TABLA: Estilos generales de sección */
+.form-section, .table-section {
+    padding: 20px 50px;
+    max-width: 900px;
+    margin: 0 auto; /* Centra estas secciones en la página */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada campo del formulario */
+}
+
+label { display: block; margin-bottom: 5px; } /* Pone el texto encima del input */
+
+input, textarea {
+    width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* TABLA:  */
+table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Une los bordes de las celdas en uno solo */
+    margin-top: 20px; /*Espacio superior.*/
+}
+
+th, td { /* Encabezado de tabla y Datos de tabla.*/
+    border: 1px solid #ddd; /* Líneas de la tabla */
+    padding: 10px;
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+th { background-color: #f4f4f4; } /* Fondo gris claro para los títulos de tabla */
+
+/* FOOTER , Ajustes barra inferior*/
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /*Espacio con el contenido anterior.*/
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 30px 25px;
+    width: 420px;
+    text-align: center;
+    border-radius: 12px; /*Esquinas redondeadas.*/
+}
+
+.card-img { /*Tamaño de la imagen.*/
+    width: 220px;
+    height: 220px;
+    object-fit: cover; /*evita deformaiento en la imagen*/
+    border-radius: 15px;
+    margin-bottom: 20px;  /*Espacio debajo de la imagen.*/
+}
+
+.card p { /*Justifica el texto.*/
+    text-align: justify;
+}
