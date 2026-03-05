@@ -1,0 +1,114 @@
+<!DOCTYPE html> <html lang="es"> <head> <!--Metadatos-->
+    <meta charset="UTF-8"> <!--Codificacion de Caracteres--> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Resposividad de la Pagina--> <title>Réplica de Plantilla Semántica</title>
+    <link rel="stylesheet" href="style.css"> </head> <!--Conexion del html con el css externo-->
+<body> <!--Todo lo que se ve en la pantalla-->
+
+    <header class="main-header"> <!--Encabezado-->
+        <div class="logo"> Mi portafolio: Maria del Mar Perez</div> 
+        <nav> <!--Seccion de Nevegcion-->
+            <ul> <!--Lista no rdenada-->
+                <li><a href="#">Home</a></li> <!--a: enlaces , href="#" sin destno al momento -->
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--Contenido Principal-->
+      <!--Seccion de articulos--> <section class="articles-container"> <!--Clase para aplicar css-->
+            <article class="card"> <!--Manejo de los articulos como una tarjeta -->
+                <!--<div class="box-placeholder">80 x 80</div> -->
+                <img src="src/foto1.jpeg" alt="Descripción de la imagen" class="card-img">
+                 <h3> Perfil Profesional</h3>
+                 <br>
+                 <p>Estudiante de Tecnología en Sistemas de Información, con formación orientada al desarrollo de software y bases de datos, 
+                y experiencia práctica en soporte técnico y mesa de ayuda. Capacidad para analizar requerimientos, documentar soluciones, 
+                resolver incidentes técnicos y brindar soporte a usuarios. Perfil adaptable, con pensamiento analítico, comunicación efectiva 
+                y enfoque en la mejora continua.</p>
+                <br>
+               <h4>Habilidades</h4>
+               <p>
+                <ul>
+                    <li>Programación</li>
+                    <li>Bases de Datos</li>
+                    <li>Análisis de Requerimientos</li>
+                    <li>Resolución de Problemas</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Adaptabilidad</li>
+                </ul> 
+            </p>
+            </article> 
+
+            <article class="card">
+               <!--- <div class="box-placeholder">80 x 80</div> -->
+               <img src="src/foto2.jpeg" alt="Descripción de la imagen" class="card-img" >
+                <h3> Experiencia </h3>
+                <br>
+                <p>Soporte Tecnico - Mesa de Ayuda Emi Falck - Cali Marzo 2025 - Marzo 2026 <br> 
+                • Atención de llamadas entrantes para soporte por fallas en equipos y aplicativos. <br>
+                • Diagnóstico y resolución de incidentes de primer nivel <br>
+                • Gestión, seguimiento y cierre de tickets y requerimientos. <br>
+                • Apoyo en solicitudes de segundo nivel. <br>
+                • Soporte a incidencias y Requerimientos presentados en sedes locales e internacionales. <br>
+                • Manejo básico de Directorio Activo.</p>
+             </article> 
+             </section>
+
+        <section class="form-section"> <!--Seccion del Formulario-->
+            <h2>Contact Form</h2> <form> <!--Define un formulario--><div class="form-group">
+            <!--Campos para ingresar texto --><label>Name:</label> <input type="text"> </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email"> 
+                </div>
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea></textarea> 
+                </div>
+                <button type="submit">Submit</button> <!--Boton envio de formulario-->
+            </form>
+        </section>
+
+        <section class="table-section"> <!--Seccion tabla-->
+            <h2>Student Scores</h2>
+            <table> <!--Inicio tabla -->
+                 <thead><!--Encabezado de la tabla -->
+                      <tr>
+                        <td colspan="4"><strong>Scores</strong></td>
+                    </tr>
+                <!--fila horizontal dentro de una tabla -->   
+                     <th>Name</th> <!--define una celda como el encabezado de un grupo de celdas de tabla, colocando en negrilla -->
+                     <th>HTML</th>
+                    <th>CSS</th>
+                    <th>Total</th>
+                    </tr> 
+                </thead>
+                <tbody> <!--Cuerpo de la Tabla -->
+                     <tr>
+                        <td>John</td> <td>80</td>
+                        <td>90</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td> <!--Celda normal-->
+                        <td>85</td>
+                        <td>95</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                         <td><strong>350</strong></td>  
+                    </tr>
+                  
+                    
+                </tbody>
+
+            </table>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Contact us at: marimarperezmontengro@gmail  @2026</p>
+    </footer>
+
+</body>
+</html>
